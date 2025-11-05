@@ -1,0 +1,157 @@
+/* Gaya Sidebar */
+.sidebar {
+    background-color: #002b5c;
+    height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #ff70a6;
+    color: white;
+    font-weight: bold;
+}
+
+.icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Gaya Konten */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion .card-header button {
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    color: #333;
+}
+
+.accordion .card-header button:hover {
+    color: #0056b3;
+}
+
+.accordion .card-body {
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+h5 {
+    background-color: #e6f7ff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.centered-image {
+    display: block; /* Membuat gambar menjadi elemen blok */
+    margin-left: auto; /* Otomatis menyesuaikan margin kiri */
+    margin-right: auto; /* Otomatis menyesuaikan margin kanan */
+    width: 30%; /* Mengatur ukuran gambar menjadi 30% dari lebar kontainer */
+    max-width: 100%; /* Menghindari gambar lebih besar dari ukuran asli */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #d9e6f2;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.navigation {
+    margin-top: 20px;
+    text-align: right; /* Agar tombol berada di sebelah kanan */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.outer-box {
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inner-box {
+    background-color: #004d40;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.container-primary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#landingHero {
+  position: relative;
+  z-index: 0; /* supaya teks tetap di atas */
+  min-height: 100vh; /* selalu setinggi layar penuh */
+  display: flex;
+  align-items: center; /* biar konten ketengah vertikal */
+  justify-content: center; /* ketengah horizontal */
+  text-align: center;
+  background: linear-gradient(135deg, #d9c7f9 0%, #fde3e3 100%); /* warna gradasi */
+}

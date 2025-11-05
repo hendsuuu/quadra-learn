@@ -1,0 +1,102 @@
+/* Styling untuk tabel */
+#nilai-a {
+  font-family: Arial, sans-serif; /* Font untuk tabel */
+  border-collapse: collapse; /* Menghilangkan garis ganda */
+  width: 100%; /* Tabel menggunakan lebar penuh */
+  margin: 20px 0; /* Jarak tabel dari elemen lain */
+}
+
+/* Styling untuk border */
+#nilai-a th, #nilai-a td {
+  border: 1px solid #ddd; /* Border abu-abu */
+  padding: 8px; /* Padding di dalam sel */
+  text-align: center; /* Teks rata tengah */
+}
+
+/* Styling untuk header tabel */
+#nilai-a th {
+  background-color: #4CAF50; /* Warna hijau header */
+  color: white; /* Teks putih */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px; /* Ukuran font header */
+}
+
+/* Styling untuk baris tabel */
+#nilai-a tr:nth-child(even) {
+  background-color: #f2f2f2; /* Warna abu-abu muda untuk baris genap */
+}
+
+#nilai-a tr:hover {
+  background-color: #ddd; /* Warna saat hover */
+}
+
+/* Styling untuk input */
+#nilai-a input[type="text"] {
+  width: 90%; /* Lebar input */
+  padding: 5px; /* Padding dalam input */
+  font-size: 14px; /* Ukuran font */
+  border: 1px solid #ccc; /* Border abu-abu */
+  border-radius: 4px; /* Sudut membulat */
+  box-sizing: border-box; /* Hitungan padding tidak memengaruhi lebar */
+  text-align: center; /* Teks di tengah */
+}
+
+/* Styling untuk fokus pada input */
+#nilai-a input[type="text"]:focus {
+  outline: none; /* Menghilangkan outline default */
+  border-color: #4CAF50; /* Border hijau saat fokus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Efek bayangan hijau */
+}
+
+/* Gaya untuk tabel */
+#contoh {
+  width: 80%; /* Lebar tabel */
+  margin: 20px auto; /* Tabel berada di tengah */
+  border-collapse: collapse; /* Gabungkan border */
+  font-family: Arial, sans-serif; /* Font utama */
+  text-align: center; /* Teks rata tengah */
+  background-color: #f9f9f9; /* Latar belakang tabel */
+  border-radius: 10px; /* Sudut tabel membulat */
+  overflow: hidden; /* Hilangkan bagian yang keluar */
+}
+
+/* Gaya untuk border pada tabel */
+#contoh th, #contoh td {
+  border: 1px solid #ddd; /* Border abu-abu */
+  padding: 10px; /* Padding untuk ruang dalam */
+}
+
+/* Gaya untuk header tabel */
+#contoh th {
+  background-color: #4CAF50; /* Latar belakang hijau */
+  color: white; /* Warna teks putih */
+  font-weight: bold; /* Teks tebal */
+  text-transform: uppercase; /* Teks huruf besar */
+  font-size: 14px; /* Ukuran font header */
+}
+
+/* Gaya untuk baris tabel */
+#contoh tr:nth-child(even) {
+  background-color: #f2f2f2; /* Latar abu-abu muda untuk baris genap */
+}
+
+#contoh tr:nth-child(odd) {
+  background-color: #ffffff; /* Latar putih untuk baris ganjil */
+}
+
+/* Gaya hover untuk baris tabel */
+#contoh tr:hover {
+  background-color: #ddd; /* Latar abu-abu saat hover */
+}
+
+/* Gaya untuk sel dalam tabel */
+#contoh td {
+  font-size: 14px; /* Ukuran font */
+}
+
+/* Gaya untuk header kolom waktu dan jarak */
+#contoh th:first-child {
+  background-color: #3e8e41; /* Warna hijau lebih gelap */
+  color: white; /* Warna teks putih */
+}
