@@ -12,8 +12,12 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->web(append: [
+            \App\Http\Middleware\CheckProgress::class,
+        ]);
         $middleware->alias([
             'role' => Role::class,
+            'check.progress' => \App\Http\Middleware\CheckProgress::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

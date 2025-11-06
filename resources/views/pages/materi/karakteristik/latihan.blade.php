@@ -10,9 +10,9 @@
             </div>
             <p>
                 Berdasarkan gambar di atas, grafik terbuka ke 
-                <input type="text" id="fungsi_terbuka1" class="form-control d-inline w-auto" style="width: 80px !important;"> 
+                <input type="text" id="fungsi_terbuka1" name="fungsi_terbuka1" class="form-control d-inline w-auto" style="width: 80px !important;"> 
                 jika anak tersebut meluncurkan skateboard, maka nilai \( a \)
-                <input type="text" id="nilai1" class="form-control d-inline w-auto" style="width: 80px !important;">.
+                <input type="text" id="nilai1" name="nilai1" class="form-control d-inline w-auto" style="width: 80px !important;">.
             </p>
         </li>
         <li class="mt-3">
@@ -23,9 +23,9 @@
             </div>
             <p>
                 Berdasarkan gambar di atas, grafik terbuka ke 
-                <input type="text" id="fungsi_terbuka2" class="form-control d-inline w-auto" style="width: 80px !important;"> 
+                <input type="text" id="fungsi_terbuka2" name="fungsi_terbuka2" class="form-control d-inline w-auto" style="width: 80px !important;"> 
                 jika tali diayunkan kebawah, maka nilai \( a \)
-                <input type="text" id="nilai2" class="form-control d-inline w-auto" style="width: 80px !important;">.
+                <input type="text" id="nilai2" name="nilai2" class="form-control d-inline w-auto" style="width: 80px !important;">.
             </p>
         </li>
         <div class="my-4">
@@ -60,5 +60,81 @@ function cekLatihan() {
         }
     });
 }
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // 🎯 Kunci jawaban benar
+  const correctAnswers = {
+   
+
+    "fungsi_terbuka1": "atas",
+    "fungsi_terbuka2": "bawah",
+    "nilai1": "positif",
+    "nilai2": "negatif",
+  };
+
+  // 🌱 Tambahkan event listener untuk semua input yang ada di kunci jawaban
+  Object.keys(correctAnswers).forEach(name => {
+    const input = document.querySelector(`[name="${name}"]`);
+    if (!input) return; // skip jika tidak ditemukan
+    
+    input.addEventListener("input", function() {
+      const userAnswer = input.value.trim().toLowerCase();
+      const correct = correctAnswers[name].toLowerCase();
+
+      // reset styling dulu
+      input.style.borderColor = "";
+      input.style.backgroundColor = "";
+
+      // jika benar
+      if (userAnswer === correct) {
+        input.style.borderColor = "green";
+        input.style.backgroundColor = "#e8ffe8";
+      } 
+      // jika salah tapi belum kosong
+      else if (userAnswer.length > 0) {
+        input.style.borderColor = "red";
+        input.style.backgroundColor = "#ffe8e8";
+      } 
+      // jika kosong
+      else {
+        input.style.borderColor = "";
+        input.style.backgroundColor = "";
+      }
+    });
+  });
+
+  // 🌟 Optional: pesan sukses jika semua benar
+  const form = document.querySelector('form[action="{{route('quiz.evaluate')}}"]');
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let allCorrect = true;
+      Object.keys(correctAnswers).forEach(name => {
+        const input = document.querySelector(`[name="${name}"]`);
+        if (input && input.value.trim().toLowerCase() !== correctAnswers[name].toLowerCase()) {
+          allCorrect = false;
+        }
+      });
+
+      if (allCorrect) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Hebat! 🎉',
+          text: 'Semua jawaban kamu benar.',
+          confirmButtonText: 'Lanjut'
+        });
+      } else {
+        Swal.fire({
+          icon: 'info',
+          title: 'Masih ada yang salah 😅',
+          text: 'Periksa lagi kolom yang berwarna merah.',
+          confirmButtonText: 'Oke'
+        });
+      }
+    });
+  }
+});
 </script>
 </div>

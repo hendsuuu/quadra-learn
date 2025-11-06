@@ -15,7 +15,6 @@
    <div class="menu-inner-shadow"></div>
 
    <ul class="menu-inner py-1">
-      <!-- Dashboards -->
       @if(auth()->check() && auth()->user()->role === 'student')
       <li class="menu-item {{ Route::is('dashboard') ? 'active' : '' }}">
          <a href="{{ route('dashboard') }}" class="menu-link">
@@ -25,79 +24,66 @@
       </li>
       @endif
 
-      <!-- Profile -->
-      {{-- <li class="menu-item {{ Route::is('profile.*') ? 'active open' : '' }}">
-         <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bxs-user"></i>
-            <div data-i18n="Profil">Profil</div>
-         </a>
-         <ul class="menu-sub">
-            <li class="menu-item {{ Route::is('profile.account') ? 'active' : '' }}">
-               <a href="{{ route('profile.account') }}" class="menu-link">
-                  <div data-i18n="Akun">Akun</div>
-               </a>
-            </li>
-            <li class="menu-item {{ Route::is('profile.change-password') ? 'active' : '' }}">
-               <a href="{{ route('profile.change-password') }}" class="menu-link">
-                  <div data-i18n="Ganti Password">Ganti Password</div>
-               </a>
-            </li>
-         </ul>
-      </li> --}}
-
-
       @if (auth()->user()->isStudent())
          @foreach($menus as $menu)
-   <li class="menu-item {{ (Route::is($menu['route']) || (Route::is('quiz.show') && request()->route('quizKey') === $menu['key'])) ? 'active open' : '' }}">
-      
-      {{-- Jika menu adalah Evaluasi --}}
-      @if ($menu['name'] === 'Evaluasi')
-         <a href="{{ route($menu['route']) }}" class="menu-link">
-            <i class="menu-icon tf-icons bx bx-book-open"></i>
-            <div data-i18n="Siswa">{{ $menu['name'] }}</div>
-         </a>
-      
-      {{-- Selain Evaluasi --}}
-      @else
-         <a href="{{ $progress->progress < $menu['progress'] ? '#' : route($menu['route']) }}" 
-            class="menu-link menu-toggle {{ $progress->progress < $menu['progress'] ? 'text-muted' : '' }}">
-            <i class="menu-icon tf-icons bx bx-book-open"></i>
-            <div data-i18n="Siswa">{{ $menu['name'] }}</div>
-         </a>
+            @php
+               $isLocked = $progress->progress < $menu['progress'];
+               $isActive = Route::is($menu['route']) || 
+                           (Route::is('quiz.show') && request()->route('quizKey') === $menu['key']);
+            @endphp
 
-         <!-- Submenu -->
-         <ul class="menu-sub">
-            <!-- Materi -->
-            <li class="menu-item {{ Route::is($menu['route']) ? 'active' : '' }}">
-               @if ($progress->progress < $menu['progress'])
-                  <div class="menu-link text-muted" style="cursor: not-allowed;">
-                     <div data-i18n="Materi">Materi</div>
-                  </div>
-               @else
+            <li class="menu-item {{ $isActive ? 'active open' : '' }}">
+               {{-- Menu Evaluasi tanpa submenu --}}
+               @if ($menu['name'] === 'Evaluasi')
                   <a href="{{ route($menu['route']) }}" class="menu-link">
-                     <div data-i18n="Materi">Materi</div>
+                     <i class="menu-icon tf-icons bx bx-flag"></i>
+                     <div data-i18n="Evaluasi">{{ $menu['name'] }}</div>
                   </a>
-               @endif
-            </li>
-
-            <!-- Quiz -->
-            <li class="menu-item {{ Route::is('quiz.show') && request()->route('quizKey') === $menu['key'] ? 'active' : '' }}">
-               @if ($progress->progress < $menu['progress'])
-                  <div class="menu-link text-muted" style="cursor: not-allowed;">
-                     <div data-i18n="Quiz">Quiz</div>
-                  </div>
                @else
-                  <a href="{{ route('quiz.show', ['quizKey' => $menu['key']]) }}" class="menu-link">
-                     <div data-i18n="Quiz">Quiz</div>
+                  <a href="{{ $isLocked ? '#' : route($menu['route']) }}"
+                     class="menu-link menu-toggle {{ $isLocked ? 'text-muted' : '' }}"
+                     style="{{ $isLocked ? 'cursor: not-allowed;' : '' }}">
+                     <i class="menu-icon tf-icons {{ $isLocked ? 'bx bx-lock-alt' : 'bx bx-book-open' }}"></i>
+                     <div data-i18n="Materi">{{ $menu['name'] }}</div>
                   </a>
+
+                  <!-- Submenu -->
+                  <ul class="menu-sub">
+                     <!-- Materi -->
+                     <li class="menu-item {{ Route::is($menu['route']) ? 'active' : '' }}">
+                        @if ($isLocked)
+                           <div class="menu-link text-muted" style="cursor: not-allowed;">
+                              <i class="bx bx-lock-alt me-2"></i>
+                              <div data-i18n="Materi">Materi (Terkunci)</div>
+                           </div>
+                        @else
+                           <a href="{{ route($menu['route']) }}" class="menu-link">
+                              <i class="bx bx-book-open me-2"></i>
+                              <div data-i18n="Materi">Materi</div>
+                           </a>
+                        @endif
+                     </li>
+
+                     <!-- Quiz -->
+                     <li class="menu-item {{ Route::is('quiz.show') && request()->route('quizKey') === $menu['key'] ? 'active' : '' }}">
+                        @if ($isLocked)
+                           <div class="menu-link text-muted" style="cursor: not-allowed;">
+                              <i class="bx bx-lock-alt me-2"></i>
+                              <div data-i18n="Quiz">Quiz (Terkunci)</div>
+                           </div>
+                        @else
+                           <a href="{{ route('quiz.show', ['quizKey' => $menu['key']]) }}" class="menu-link">
+                              <i class="bx bx-edit me-2"></i>
+                              <div data-i18n="Quiz">Quiz</div>
+                           </a>
+                        @endif
+                     </li>
+                  </ul>
                @endif
             </li>
-         </ul>
-      @endif
-   </li>
-@endforeach
-
+         @endforeach
       @else
+         <!-- Admin Section -->
          <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Data Master</span>
          </li>

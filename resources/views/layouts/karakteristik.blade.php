@@ -120,10 +120,10 @@
                       <form method="POST" action="">
                         <div class="table-responsive">
                           <table class="table table-bordered">
-                            <thead class="bg-primary text-white">
+                            <thead class="bg-primary ">
                               <tr>
-                                <td class="text-center">Peran nilai a</td>
-                                <td class="text-center">Parabola terbuka ke atas / bawah</td>
+                                <td class="text-center" style="color: white">Peran nilai a</td>
+                                <td class="text-center" style="color: white">Parabola terbuka ke atas / bawah</td>
                               </tr>
                             </thead>
                             <tbody>
@@ -146,12 +146,12 @@
                   <form action="{{route('quiz.evaluate')}}" method="POST">
                     @csrf 
                     <p>Berdasarkan hasil eksplorasi, nilai <b>a</b> menentukan
-                      <input type="text" style="width: 50px;"> dan 
-                      <input type="text" style="width: 50px;">.
+                      <input type="text" name="arah1" style="width: 50px;"> dan 
+                      <input type="text" name="arah2" style="width: 50px;">.
                       Jika <b>a > 0</b>, parabola terbuka ke 
-                      <input type="text" name="arah1" class="form-control d-inline w-auto" style="width: 50px;">
+                      <input type="text" name="arah3" class="form-control d-inline w-auto" style="width: 50px;">
                       Jika <b>a < 0</b>, parabola terbuka ke 
-                      <input type="text" name="arah2" class="form-control d-inline w-auto" style="width: 50px;">
+                      <input type="text" name="arah4" class="form-control d-inline w-auto" style="width: 50px;">
                     </p>
                     <p>Semakin besar nilai a → parabola semakin 
                       <input type="text" name="lebar1" class="form-control d-inline w-auto" style="width: 50px;">
@@ -202,12 +202,12 @@
                     </div>
                   </div>
                   <p>
-          Berdasarkan hasil eksplorasi kalian, maka nilai 𝑐 menentukan <input type="text" placeholder="" style="width: 50px;">
+          Berdasarkan hasil eksplorasi kalian, maka nilai 𝑐 menentukan <input type="text" name="input_1" placeholder="" style="width: 50px;">
           dengan sumbu <input type="text" name="sumbu" class="form-control d-inline w-auto @error('sumbu') is-invalid @enderror" placeholder="Isi sumbu" value="{{old('sumbu')}}" style="width: 50px !important;">. 
           Nilai 𝑐 merupakan nilai dari fungsi ketika 𝑥 = 0. Jadi, titik potong grafik dengan sumbu 
           <input type="text" name="sumbu_kedua" class="form-control d-inline w-auto @error('sumbu_kedua') is-invalid @enderror" placeholder="Isi sumbu" value="{{old('sumbu_kedua')}}" style="width: 50px !important;"> adalah di titik 
           (<input type="number" name="x" class="form-control d-inline w-auto @error('x') is-invalid @enderror" placeholder="x" value="{{old('x')}}" style="width: 50px !important;">, 
-          <input type="number" name="y" class="form-control d-inline w-auto @error('y') is-invalid @enderror" placeholder="y" value="{{old('y')}}" style="width: 50px !important;">). Nilai 𝑐 juga menggeser grafik 
+          <input type="text" name="y" class="form-control d-inline w-auto @error('y') is-invalid @enderror" placeholder="y" value="{{old('y')}}" style="width: 50px !important;">). Nilai 𝑐 juga menggeser grafik 
           fungsi kuadrat secara vertikal. Jika 𝑐 meningkat, grafik akan bergeser ke 
           <input type="text" name="up_direction" class="form-control d-inline w-auto @error('up_direction') is-invalid @enderror" placeholder="Isi arah" value="{{old('up_direction')}}" style="width: 50px !important;">. Sebaliknya, jika 𝑐 menurun, 
           grafik akan bergeser ke <input type="text" name="down_direction" class="form-control d-inline w-auto @error('down_direction') is-invalid @enderror" placeholder="Isi arah" value="{{old('down_direction')}}" style="width: 50px !important;">.
@@ -648,29 +648,7 @@
 
                 </div>
 
-                <!-- STEP 5: Latihan -->
-                <div class="step-page">
-                  <h5>Latihan dan Visualisasi</h5>
-                  <p>Isilah tabel dan buat grafik menggunakan GeoGebra:</p>
-                  <div class="container-flex">
-                    <div class="flex-item">
-                      <table class="table table-bordered text-center">
-                        <thead class="bg-info text-white">
-                          <tr><td>x</td><td>y</td></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td>-2</td><td>5</td></tr>
-                          <tr><td>-1</td><td>2</td></tr>
-                          <tr><td>0</td><td>1</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="flex-item">
-                      <iframe src="https://www.geogebra.org/calculator/tmpyggsm" 
-                        style="width:100%; height:380px; border:0;" allowfullscreen allow="geogebra"></iframe>
-                    </div>
-                  </div>
-                </div>
+            
 
                 <!-- NAVIGATION BUTTON -->
                 <div class="switcher-nav">
@@ -687,6 +665,23 @@
     </main>
   </div>
 </div>
+<!-- Modal popup -->
+<div class="modal fade" id="finishModal" tabindex="-1" aria-labelledby="finishModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title w-100" id="finishModalLabel">🎉 Selamat!</h5>
+      </div>
+      <div class="modal-body">
+        <p>Semua langkah sudah selesai. Bagus sekali, kamu sudah menyelesaikan materi ini! 🎓</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection
 
 <!-- Scripts -->
@@ -712,13 +707,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Tombol "Selanjutnya"
   nextBtn.addEventListener('click', () => {
-    if (currentStep < totalSteps) {
-      currentStep++;
-      showStep(currentStep);
-    } else {
-      alert('🎉 Semua langkah selesai! Bagus sekali!');
-    }
-  });
+  if (currentStep < totalSteps) {
+    currentStep++;
+    showStep(currentStep);
+  } else {
+    const modal = new bootstrap.Modal(document.getElementById('finishModal'));
+    modal.show();
+  }
+});
 
   // Tombol "Sebelumnya"
   prevBtn.addEventListener('click', () => {
@@ -730,6 +726,105 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Tampilkan step pertama saat load
   showStep(currentStep);
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // 🎯 Kunci jawaban benar
+  const correctAnswers = {
+    // 🔹 Tabel peran nilai a
+    "nilai[-2]": "bawah",
+    "nilai[3]": "atas",
+    "nilai[0]": "bawah",   // a = 0 diganti a = -5 → bawah
+    "nilai[2]": "atas",
+    "nilai[5]": "bawah",   // a = 5 diganti a = -1 → bawah
+
+    // 🔹 Paragraf input
+    "arah1": "arah",
+    "arah2": "Lebar Parabola",
+    "arah3": "atas",
+    "arah4": "bawah",
+    "lebar1": "sempit",
+    "lebar2": "lebar",
+
+    "fungsi_terbuka1": "atas",
+    "fungsi_terbuka2": "bawah",
+    "nilai1": "positif",
+    "nilai2": "negatif",
+
+    "input_1": "titik potong",
+    "sumbu": "y",
+    "sumbu_kedua": "y",
+    "x": "0",
+    "y": "c",
+    "up_direction": "atas",
+    "down_direction": "bawah"
+  };
+
+  // 🌱 Tambahkan event listener untuk semua input yang ada di kunci jawaban
+  Object.keys(correctAnswers).forEach(name => {
+    const input = document.querySelector(`[name="${name}"]`);
+    if (!input) return; // skip jika tidak ditemukan
+    
+    input.addEventListener("input", function() {
+      const userAnswer = input.value.trim().toLowerCase();
+      const correct = correctAnswers[name].toLowerCase();
+
+      // reset styling dulu
+      input.style.borderColor = "";
+      input.style.backgroundColor = "";
+
+      // jika benar
+      if (userAnswer === correct) {
+        input.style.borderColor = "green";
+        input.style.backgroundColor = "#e8ffe8";
+      } 
+      // jika salah tapi belum kosong
+      else if (userAnswer.length > 0) {
+        input.style.borderColor = "red";
+        input.style.backgroundColor = "#ffe8e8";
+      } 
+      // jika kosong
+      else {
+        input.style.borderColor = "";
+        input.style.backgroundColor = "";
+      }
+    });
+  });
+
+  // 🌟 Optional: pesan sukses jika semua benar
+  const form = document.querySelector('form[action="{{route('quiz.evaluate')}}"]');
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let allCorrect = true;
+      Object.keys(correctAnswers).forEach(name => {
+        const input = document.querySelector(`[name="${name}"]`);
+        if (input && input.value.trim().toLowerCase() !== correctAnswers[name].toLowerCase()) {
+          allCorrect = false;
+        }
+      });
+
+      if (allCorrect) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Hebat! 🎉',
+          text: 'Semua jawaban kamu benar.',
+          confirmButtonText: 'Lanjut'
+        });
+      } else {
+        Swal.fire({
+          icon: 'info',
+          title: 'Masih ada yang salah 😅',
+          text: 'Periksa lagi kolom yang berwarna merah.',
+          confirmButtonText: 'Oke'
+        });
+      }
+    });
+  }
 });
 </script>
 

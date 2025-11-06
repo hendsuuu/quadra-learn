@@ -26,13 +26,14 @@ Route::post('/sign-out', [AuthController::class, 'signOut'])->name('auth.sign-ou
 Route::get('/indikator-capaian', [KompetensiController::class, 'indikator'])->name('indikator');
 
 // Rute-rute yang memerlukan autentikasi
-Route::middleware(['auth'])->group(function() {
+Route::middleware(['auth', 'check.progress'])->group(function() {
     Route::get('/peta', function () {
         return view('layouts/peta');
     });
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::prefix('/dashboard')->group(function () {
+        
         Route::get('/rekonstruksi', [DashboardController::class, 'rekonstruksi'])->name('dashboard.rekonstruksi');
         Route::get('/masalah', [DashboardController::class, 'masalah'])->name('dashboard.masalah');
         Route::get('/evaluasi', [QuizController::class, 'evaluasiView'])->name('dashboard.evaluasi');
