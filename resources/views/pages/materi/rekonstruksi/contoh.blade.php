@@ -103,9 +103,9 @@
                 <!-- Bentuk: b = - pecahan -->
                 <span>\( b = - \)</span>
                 <div style="display: grid; grid-template-rows: auto auto; text-align: center;">
-                    <input type="text" id="user_x_num_step1" name="isi40" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_num_step1" name="isi42" placeholder="" style="width: 30px;">
                     <hr style="margin: 0;">
-                    <input type="text" id="user_x_den_step1" name="isi41" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_den_step1" name="isi43" placeholder="" style="width: 30px;">
                 </div>
             </div>
         </li>
@@ -117,20 +117,20 @@
             <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 1.1rem; margin-bottom: 10px;">
                 <!-- Pecahan 1 -->
                 <div style="display: inline-grid; grid-template-rows: auto auto; text-align: center;">
-                    <input type="text" id="user_x_num_step1" name="isi40" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_num_step1" name="isi44" placeholder="" style="width: 30px;">
                     <hr style="margin: 0;">
-                    <input type="text" id="user_x_den_step1" name="isi41" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_den_step1" name="isi45" placeholder="" style="width: 30px;">
                 </div>
                 <span>-</span>
                 <!-- Pecahan 2 -->
                 <div style="display: inline-grid; grid-template-rows: auto auto; text-align: center;">
-                    <input type="text" id="user_x_num_step1" name="isi42" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_num_step1" name="isi46" placeholder="" style="width: 30px;">
                     <hr style="margin: 0;">
-                    <input type="text" id="user_x_den_step1" name="isi43" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_den_step1" name="isi47" placeholder="" style="width: 30px;">
                 </div>
                 <span>+ \( c \)</span>
             </div>
-            <span> \( c \) = <input type="text" name="isi44" placeholder="" style="width: 30px;"> </span>
+            <span> \( c \) = <input type="text" name="isi48" placeholder="" style="width: 30px;"> </span>
         </li>
         <li>
             Setelah menemukan nilai \(a, b\) dan \(c\), maka di dapat fungsi kuadrat yaitu:
@@ -139,19 +139,19 @@
                 <span>\( y = \)</span>
                 <!-- pecahan 1 -->
                 <div style="display: grid; grid-template-rows: auto auto; text-align: center;">
-                    <input type="text" id="user_x_num_step1" name="isi40" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_num_step1" name="isi49" placeholder="" style="width: 30px;">
                     <hr style="margin: 0;">
-                    <input type="text" id="user_x_den_step1" name="isi41" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_den_step1" name="isi50" placeholder="" style="width: 30px;">
                 </div>
                 <p>\( x^2 - \)</p>
 
                 <!-- pecahan 2 -->
                 <div style="display: grid; grid-template-rows: auto auto; text-align: center;">
-                    <input type="text" id="user_x_num_step1" name="isi42" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_num_step1" name="isi51" placeholder="" style="width: 30px;">
                     <hr style="margin: 0;">
-                    <input type="text" id="user_x_den_step1" name="isi43" placeholder="" style="width: 30px;">
+                    <input type="text" id="user_x_den_step1" name="isi52" placeholder="" style="width: 30px;">
                 </div>
-                <p>\( x + \)<input type="text" name="isi44" placeholder="" style="width: 30px;"></p>
+                <p>\( x + \)<input type="text" name="isi53" placeholder="" style="width: 30px;"></p>
             </div>
         </li>
     </ul>
@@ -168,6 +168,55 @@ document.addEventListener("DOMContentLoaded", function() {
     "isi4": "9",
     "isi5": "3",
     "isi6": "5",
+    "isi7": "4",
+    "isi8": "2",
+    "isi9": "3",
+    "isi10": "3",
+    "isi11": "1",
+    "isi12": "9",
+    "isi13": "3",
+    "isi14": "4",
+    "isi15": "2",
+    "isi16": "5",
+    "isi17": "3",
+    "isi18": "5",
+    "isi19": "2",
+    "isi20": "3",
+    "isi21": "1",
+    "isi22": "5",
+    "isi23": "2",
+    "isi24": "5",
+    "isi25": "3",
+    "isi26": "2",
+    "isi27": "1",
+    "isi28": "2",
+    "isi29": "1",
+    "isi30": "1",
+    "isi31": "2",
+    "isi32": "3",
+    "isi33": "1",
+    "isi34": "2",
+    "isi35": "1",
+    "isi36": "3",
+    "isi37": "2",
+    "isi38": "1",
+    "isi39": "1",
+    "isi40": "3",
+    "isi41": "2",
+    "isi42": "1",
+    "isi43": "2",
+    "isi44": "1",
+    "isi45": "2",
+    "isi46": "1",
+    "isi47": "2",
+    "isi48": "2",
+    "isi49": "1",
+    "isi50": "2",
+    "isi51": "1",
+    "isi52": "2",
+    "isi53": "2",
+
+
 
    
   };
