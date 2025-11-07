@@ -195,8 +195,11 @@
                         </thead>
                         <tbody>
                           <tr><td>\( c = 1 \)</td><td>(0,1)</td></tr>
-                          <tr><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>
-                          <tr><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>
+                          <tr><td>5</td><td><input type="text" name="c_1" class="form-control"></td></tr>
+                          <tr><td>8</td><td><input type="text" name="c_2" class="form-control"></td></tr>
+                          <tr><td>-3</td><td><input type="text" name="c_3" class="form-control"></td></tr>
+                          <tr><td>-6</td><td><input type="text" name="c_4" class="form-control"></td></tr>
+                          <tr><td>-9</td><td><input type="text" name="c_5" class="form-control"></td></tr>
                         </tbody>
                       </table>
                     </div>
@@ -222,13 +225,13 @@
           </div>
             <span class="border border-primary p-2 my-2 rounded">Jawab: </span>
             <div class="py-2 mt-3">
-              <p>Titik potong dengan sumbu \( y \) adalah \( 0, -2\) dan nilai \( c \) adalah <input type="text" placeholder="" style="width: 50px;"></p>
+              <p>Titik potong dengan sumbu \( y \) adalah \( 0, -2\) dan nilai \( c \) adalah <input type="text" name="contoh" placeholder="" style="width: 50px;"></p>
             </div>
             <span class="border border-primary p-2 my-2 rounded">Latihan Soal: </span>
             <div class="py-2 mt-3">
-              <p>1. Diketahui persamaan \( f(x)=x^2+2x \). Nilai 𝑐 yang memenuhi adalah <input type="text" placeholder="" style="width: 50px;"> serta titik potong dengan sumbu 𝑦 yaitu <input type="text" placeholder="" style="width: 50px;"></p>
-              <p>2. Diketahui Persamaan \( f(x)=-x^2-x+3 \). Nilai 𝑐 yang memenuhi adalah <input type="text" placeholder="" style="width: 50px;"> serta titik potong dengan sumbu 𝑦 yaitu <input type="text" placeholder="" style="width: 50px;"></p>
-              <p>3. Diketahui Persamaan \( f(x)=-x^2-3x+3 \). Nilai 𝑐 yang memenuhi adalah <input type="text" placeholder="" style="width: 50px;"> serta titik potong dengan sumbu 𝑦 yaitu <input type="text" placeholder="" style="width: 50px;"></p>
+              <p>1. Diketahui persamaan \( f(x)=x^2+2x \). Nilai 𝑐 yang memenuhi adalah <input type="text" name="latihan_1_c" placeholder="" style="width: 50px;"> serta titik potong dengan sumbu 𝑦 yaitu <input type="text" name="latihan_1_y" placeholder="" style="width: 50px;"></p>
+              <p>2. Diketahui Persamaan \( f(x)=-x^2-x+3 \). Nilai 𝑐 yang memenuhi adalah <input type="text" name="latihan_2_c" placeholder="" style="width: 50px;"> serta titik potong dengan sumbu 𝑦 yaitu <input type="text" name="latihan_2_y" placeholder="" style="width: 50px;"></p>
+              <p>3. Diketahui Persamaan \( f(x)=-x^2-3x+3 \). Nilai 𝑐 yang memenuhi adalah <input type="text" name="latihan_3_c" placeholder="" style="width: 50px;"> serta titik potong dengan sumbu 𝑦 yaitu <input type="text" name="latihan_3_y" placeholder="" style="width: 50px;"></p>
               <p>4. Isilah tabel berikut ini:</p>
             <div class="text-center">
               <table class="table table-bordered table-hover text-center" style="height: 50px">
@@ -245,19 +248,19 @@
                 <tbody>
                   <tr>
                     <td>\( f(x)=2x^2-x+3 \)</td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 50px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 50px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 50px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 100px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 80px;"></td>
+                    <td><input type="text" name="fungsi_1_1" class="form-control" placeholder="" style="width: 50px;"></td>
+                    <td><input type="text" name="fungsi_1_2" class="form-control" placeholder="" style="width: 50px;"></td>
+                    <td><input type="text" name="fungsi_1_3" class="form-control" placeholder="" style="width: 50px;"></td>
+                    <td><input type="text" name="fungsi_1_4" class="form-control" placeholder="" style="width: 100px;"></td>
+                    <td><input type="text" name="fungsi_1_5" class="form-control" placeholder="" style="width: 80px;"></td>
                   </tr>
                   <tr>
                     <td>\( f(x)=-2x^2-2x+6 \)</td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 50px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 50px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 50px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 100px;"></td>
-                    <td><input type="number" class="form-control" placeholder="" style="width: 80px;"></td>
+                    <td><input type="text" name="fungsi_2_1" class="form-control" placeholder="" style="width: 50px;"></td>
+                    <td><input type="text" name="fungsi_2_2" class="form-control" placeholder="" style="width: 50px;"></td>
+                    <td><input type="text" name="fungsi_2_3" class="form-control" placeholder="" style="width: 50px;"></td>
+                    <td><input type="text" name="fungsi_2_4" class="form-control" placeholder="" style="width: 100px;"></td>
+                    <td><input type="text" name="fungsi_2_5" class="form-control" placeholder="" style="width: 80px;"></td>
                   </tr>
                 </tbody>
               </table>
@@ -287,9 +290,9 @@
           <li>
             Menentukan titik puncak:
             <p>- Nilai 𝑎 = 2, 𝑏 = −4, dan 𝑐 = 1</p>
-            <p>- Koordinat 𝑥 dari titik puncak: \( 𝑥 = \frac{-b}{2a} = \frac{-4}{2(2)} = \frac{4}{4} = \) <input type="text" placeholder="" style="width: 50px;"></p>
-            <p>- Koordinat 𝑦 dari titik puncak: \( y = 2(1)^2-4(1)+1 \) = <input type="text" placeholder="" style="width: 50px;"> − <input type="text" placeholder="" style="width: 50px;"> + <input type="text" placeholder="" style="width: 50px;"> = <input type="text" placeholder="" style="width: 50px;"></p>
-            <p>- Jadi, titik puncak adalah (<input type="text" placeholder="" style="width: 50px;">, <input type="text" placeholder="" style="width: 50px;">).</p>
+            <p>- Koordinat 𝑥 dari titik puncak: \( 𝑥 = \frac{-b}{2a} = \frac{-4}{2(2)} = \frac{4}{4} = \) <input type="text" name="b1" placeholder="" style="width: 50px;"></p>
+            <p>- Koordinat 𝑦 dari titik puncak: \( y = 2(1)^2-4(1)+1 \) = <input type="text" name="b2" placeholder="" style="width: 50px;"> − <input type="text" name="b3" placeholder="" style="width: 50px;"> + <input type="text" name="b4" placeholder="" style="width: 50px;"> = <input type="text" name="b5" placeholder="" style="width: 50px;"></p>
+            <p>- Jadi, titik puncak adalah (<input type="text" name="b6" placeholder="" style="width: 50px;">, <input type="text" name="b7" placeholder="" style="width: 50px;">).</p>
           </li>
           <li>
             Menentukan sumbu simetri:
@@ -297,8 +300,8 @@
           </li>
           <li>
             Menentukan apakah titik puncak adalah maksimum atau minimum:
-            <p>- Karena 𝑎 = 2 (positif), parabola terbuka ke <input type="text" placeholder="" style="width: 50px;">, sehingga titik puncak
-              (<input type="text" placeholder="" style="width: 50px;">, <input type="text" placeholder="" style="width: 50px;">) adalah titik minimum.</p>
+            <p>- Karena 𝑎 = 2 (positif), parabola terbuka ke <input type="text" name="b8" placeholder="" style="width: 50px;">, sehingga titik puncak
+              (<input type="text" name="b9" placeholder="" style="width: 50px;">, <input type="text" name="b10" placeholder="" style="width: 50px;">) adalah titik minimum.</p>
           </li>
           <span class="border border-primary p-2 my-2 rounded">Latihan Soal: </span>
           <ol>
@@ -311,51 +314,51 @@
                   <ol type="a" class="mt-3">
                     <li>
                       Menentukan titik puncak:
-                      <p>- Nilai 𝑎 = <input type="text" placeholder="" style="width: 50px;">, 𝑏= <input type="text" placeholder="" style="width: 50px;"> dan 𝑐 = <input type="text" placeholder="" style="width: 50px;"></p>
+                      <p>- Nilai 𝑎 = <input type="text" name="b_lat_1" placeholder="" style="width: 50px;">, 𝑏= <input type="text" name="b_lat_2" placeholder="" style="width: 50px;"> dan 𝑐 = <input type="text" name="b_lat_3" placeholder="" style="width: 50px;"></p>
                       <p>- Koordinat \( x \) dari titik puncak: \( x= \frac{-b}{2a} \)</p>
                       <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
                         <span>\( x = \)</span>
 
                         <!-- Pecahan 1 -->
                         <div style="display: inline-grid; grid-template-rows: auto auto; text-align: center;">
-                          <input type="text" id="user_x_num_step1" placeholder="..." style="width: 40px;">
+                          <input type="text" name="b_lat_4" id="user_x_num_step1" placeholder="..." style="width: 40px;">
                           <hr style="margin: 0;">
-                          <input type="text" id="user_x_den_step1" placeholder="..." style="width: 40px;">
+                          <input type="text" name="b_lat_5" id="user_x_den_step1" placeholder="..." style="width: 40px;">
                         </div>
                         <span>=</span>
 
                         <!-- Pecahan 2 -->
                         <div style="display: inline-grid; grid-template-rows: auto auto; text-align: center;">
-                          <input type="text" id="user_x_num_step2" placeholder="..." style="width: 40px;">
+                          <input type="text" name="b_lat_6" id="user_x_num_step2" placeholder="..." style="width: 40px;">
                           <hr style="margin: 0;">
-                          <input type="text" id="user_x_den_step2" placeholder="..." style="width: 40px;">
+                          <input type="text" name="b_lat_7" id="user_x_den_step2" placeholder="..." style="width: 40px;">
                         </div>
                         <span>=</span>
 
                         <!-- Jawaban akhir -->
-                        <input type="text" id="user_result_x" placeholder="..." style="width: 50px;">
+                        <input type="text" name="b_lat_8" id="user_result_x" placeholder="..." style="width: 50px;">
                         <span></span>
                       </div>
                         <p>
                           - Koordinat \( y \) dari titik puncak: \( y = -x^2 + 4x - 4 = \)
-                          <input type="text" style="width: 50px;"> +
-                          <input type="text" style="width: 50px;"> -
-                          <input type="text" style="width: 50px;"> =
-                          <input type="text" style="width: 50px;"> +
-                          <input type="text" style="width: 50px;"> -
-                          <input type="text" style="width: 50px;"> =
-                          <input type="text" style="width: 50px;">
+                          <input type="text" name="b_lat_9" style="width: 50px;"> +
+                          <input type="text" name="b_lat_10" style="width: 50px;"> -
+                          <input type="text" name="b_lat_11" style="width: 50px;"> =
+                          <input type="text" name="b_lat_12" style="width: 50px;"> +
+                          <input type="text" name="b_lat_13" style="width: 50px;"> -
+                          <input type="text" name="b_lat_14" style="width: 50px;"> =
+                          <input type="text" name="b_lat_15" style="width: 50px;">
                         </p>
-                        <p>- Jadi, titik puncaknya adalah <input type="text" placeholder="" style="width: 50px;"> = (<input type="text" placeholder="" style="width: 50px;">,<input type="text" placeholder="" style="width: 50px;">)</p>
+                        <p>- Jadi, titik puncaknya adalah = (<input type="text" name="b_lat_17" placeholder="" style="width: 50px;">,<input type="text" name="b_lat_18" placeholder="" style="width: 50px;">)</p>
                         </li>
                         <li>
                         Menentukan sumbu simetri:
-                        <p>- Sumbu simteri adalah garis vertical 𝑥 = <input type="text" placeholder="" style="width: 50px;"></p>
+                        <p>- Sumbu simteri adalah garis vertical 𝑥 = <input type="text" name="b_lat_19" placeholder="" style="width: 50px;"></p>
                         </li>
                         <li>
                         Menentukan apakah titik puncak adalah maksimum atau minimum:
-                        <p>- Karena 𝑎 = <input type="text" placeholder="" style="width: 50px;">, parabola tebuka ke <input type="text" placeholder="" style="width: 50px;">, sehingga titik puncak
-                          (<input type="text" placeholder="" style="width: 50px;">, <input type="text" placeholder="" style="width: 50px;">) adalah titik <input type="text" placeholder="" style="width: 50px;"></p>
+                        <p>- Karena 𝑎 = <input type="text" name="b_lat_20" placeholder="" style="width: 50px;">, parabola tebuka ke <input type="text" name="b_lat_21" placeholder="" style="width: 50px;">, sehingga titik puncak
+                          (<input type="text" name="b_lat_22" placeholder="" style="width: 50px;">, <input type="text" name="b_lat_23" placeholder="" style="width: 50px;">) adalah titik <input type="text" name="b_lat_24" placeholder="" style="width: 50px;"></p>
                         </li>
                     </div>
                     <li>
@@ -367,48 +370,48 @@
                     <ol type="a" class="mt-3">
                       <li>
                       Menentukan titik puncak:
-                      <p>- Nilai 𝑎 = <input type="text" placeholder="" style="width: 50px;">, 𝑏= <input type="text" placeholder="" style="width: 50px;"> dan 𝑐 =<input type="text" placeholder="" style="width: 50px;"></p>
+                      <p>- Nilai 𝑎 = <input type="text" name="b_lat_25" placeholder="" style="width: 50px;">, 𝑏= <input type="text" name="b_lat_26" placeholder="" style="width: 50px;"> dan 𝑐 =<input type="text" name="b_lat_27" placeholder="" style="width: 50px;"></p>
                       <p>- Koordinat \( x \) dari titik puncak: \( x= \frac{-b}{2a} \)</p>
                       <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
                         <span>\( x = \)</span>
 
                         <!-- Pecahan 1 -->
                         <div style="display: inline-grid; grid-template-rows: auto auto; text-align: center;">
-                          <input type="text" id="user_x_num_step1" placeholder="..." style="width: 40px;">
+                          <input type="text" id="user_x_num_step1" name="b_lat_28" placeholder="..." style="width: 40px;">
                           <hr style="margin: 0;">
-                          <input type="text" id="user_x_den_step1" placeholder="..." style="width: 40px;">
+                          <input type="text" id="user_x_den_step1" name="b_lat_29" placeholder="..." style="width: 40px;">
                         </div>
 
                         <span>=</span>
 
                         <!-- Pecahan 2 -->
                         <div style="display: inline-grid; grid-template-rows: auto auto; text-align: center;">
-                          <input type="text" id="user_x_num_step2" placeholder="..." style="width: 40px;">
+                          <input type="text" id="user_x_num_step2" name="b_lat_30" placeholder="..." style="width: 40px;">
                           <hr style="margin: 0;">
-                          <input type="text" id="user_x_den_step2" placeholder="..." style="width: 40px;">
+                          <input type="text" id="user_x_den_step2" name="b_lat_31" placeholder="..." style="width: 40px;">
                         </div>
 
                         <span>=</span>
 
                         <!-- Jawaban akhir -->
-                        <input type="text" id="user_result_x" placeholder="..." style="width: 50px;">
+                        <input type="text" id="user_result_x" name="b_lat_32" placeholder="..." style="width: 50px;">
 
                         <span></span>
                       </div>
 
-                      <p>- Koordinat 𝑦 dari titik puncak: \( y = -x^2+4x-4 \) = <input type="text" placeholder="" style="width: 50px;"> + <input type="text" placeholder="" style="width: 50px;"> - <input type="text" placeholder="" style="width: 50px;">
-                      = <input type="text" placeholder="" style="width: 50px;"> + <input type="text" placeholder="" style="width: 50px;"> - <input type="text" placeholder="" style="width: 50px;">
-                      = <input type="text" placeholder="" style="width: 50px;"></p>
-                      <p>- Jadi, titik puncaknya adalah <input type="text" placeholder="" style="width: 50px;"> (<input type="text" placeholder="" style="width: 50px;">,<input type="text" placeholder="" style="width: 50px;">)</p>
+                      <p>- Koordinat 𝑦 dari titik puncak: \( y = -x^2+4x-4 \) = <input type="text" name="b_lat_33" placeholder="" style="width: 50px;"> + <input type="text" name="b_lat_34" placeholder="" style="width: 50px;"> - <input type="text" name="b_lat_35" placeholder="" style="width: 50px;">
+                      = <input type="text" name="b_lat_36" placeholder="" style="width: 50px;"> + <input type="text" name="b_lat_37" placeholder="" style="width: 50px;"> - <input type="text" name="b_lat_38" placeholder="" style="width: 50px;">
+                      = <input type="text" name="b_lat_39" placeholder="" style="width: 50px;"></p>
+                      <p>- Jadi, titik puncaknya adalah (<input type="text" name="b_lat_41" placeholder="" style="width: 50px;">,<input type="text" name="b_lat_42" placeholder="" style="width: 50px;">)</p>
                       </li>
                       <li>
                       Menentukan sumbu simetri:
-                      <p>- Sumbu simteri adalah garis vertical 𝑥 = <input type="text" placeholder="" style="width: 50px;"></p>
+                      <p>- Sumbu simetri adalah garis vertical 𝑥 = <input type="text" name="b_lat_40" placeholder="" style="width: 50px;"></p>
                       </li>
                       <li>
                       Menentukan apakah titik puncak adalah maksimum atau minimum:
-                      <p>- Karena 𝑎 = <input type="text" placeholder="" style="width: 50px;">, parabola tebuka ke <input type="text" placeholder="" style="width: 50px;">, sehingga titik puncak
-                        (<input type="text" placeholder="" style="width: 50px;">, <input type="text" placeholder="" style="width: 50px;">) adalah titik <input type="text" placeholder="" style="width: 50px;">
+                      <p>- Karena 𝑎 = <input type="text" name="b_lat_43" placeholder="" style="width: 50px;">, parabola tebuka ke <input type="text" name="b_lat_44" placeholder="" style="width: 50px;">, sehingga titik puncak
+                        (<input type="text" name="b_lat_45" placeholder="" style="width: 50px;">, <input type="text" name="b_lat_46" placeholder="" style="width: 50px;">) adalah titik <input type="text" name="b_lat_47" placeholder="" style="width: 50px;">
                       </p>
                       </li>
                     </div>
@@ -463,15 +466,15 @@
         Menghitung nilai diskriminan:
         <p>
           - \( D=b^2-4ac \) =
-          <input type="text" style="width: 50px;"> −
-          <input type="text" style="width: 50px;"> (
-          <input type="text" style="width: 50px;">)(
-          <input type="text" style="width: 50px;">) =
-          <input type="text" style="width: 50px;"> +
-          <input type="text" style="width: 50px;"> =
-          <input type="text" style="width: 50px;">
+          <input type="text" name="d1" style="width: 50px;"> −
+          <input type="text" name="d2" style="width: 50px;"> (
+          <input type="text" name="d3" style="width: 50px;">)(
+          <input type="text" name="d4" style="width: 50px;">) =
+          <input type="text" name="d5" style="width: 50px;"> +
+          <input type="text" name="d6" style="width: 50px;"> =
+          <input type="text" name="d7" style="width: 50px;">
         </p>
-        <p>- Jadi, nilai diskriminan adalah <input type="text" style="width: 50px;"></p>
+        <p>- Jadi, nilai diskriminan adalah <input type="text" name="d8" style="width: 50px;"></p>
       </li>
     </ol>
   </div>
@@ -490,24 +493,24 @@
       <li>
         Menentukan nilai 𝑎, 𝑏, dan 𝑐
         <p>
-          - Nilai 𝑎 = <input type="text" style="width: 50px;">,
-          𝑏 = <input type="text" style="width: 50px;">,
-          𝑐 = <input type="text" style="width: 50px;">
+          - Nilai 𝑎 = <input type="text" name="d9" style="width: 50px;">,
+          𝑏 = <input type="text" name="d10" style="width: 50px;">,
+          𝑐 = <input type="text" name="d11" style="width: 50px;">
         </p>
       </li>
       <li>
         Menghitung nilai diskriminan:
         <p>
           - \( D=b^2-4ac \) =
-          <input type="text" style="width: 50px;"> -
-          <input type="text" style="width: 50px;">(
-          <input type="text" style="width: 50px;">)(
-          <input type="text" style="width: 50px;">) =
-          <input type="text" style="width: 50px;"> +
-          <input type="text" style="width: 50px;"> =
-          <input type="text" style="width: 50px;">
+          <input type="text" name="d12" style="width: 50px;"> -
+          <input type="text" name="d13" style="width: 50px;">(
+          <input type="text" name="d14" style="width: 50px;">)(
+          <input type="text" name="d15" style="width: 50px;">) =
+          <input type="text" name="d16" style="width: 50px;"> +
+          <input type="text" name="d17" style="width: 50px;"> =
+          <input type="text" name="d18" style="width: 50px;">
         </p>
-        <p>- Jadi, nilai diskriminan adalah <input type="text" style="width: 50px;"></p>
+        <p>- Jadi, nilai diskriminan adalah <input type="text" name="d19" style="width: 50px;"></p>
       </li>
     </ol>
   </div>
@@ -522,24 +525,24 @@
       <li>
         Menentukan nilai 𝑎, 𝑏, dan 𝑐
         <p>
-          - Nilai 𝑎 = <input type="text" style="width: 50px;">,
-          𝑏 = <input type="text" style="width: 50px;">,
-          𝑐 = <input type="text" style="width: 50px;">
+          - Nilai 𝑎 = <input type="text" name="d20" style="width: 50px;">,
+          𝑏 = <input type="text" name="d21" style="width: 50px;">,
+          𝑐 = <input type="text" name="d22" style="width: 50px;">
         </p>
       </li>
       <li>
         Menghitung nilai diskriminan:
         <p>
           - \( D=b^2-4ac \) =
-          <input type="text" style="width: 50px;"> -
-          <input type="text" style="width: 50px;">(
-          <input type="text" style="width: 50px;">)(
-          <input type="text" style="width: 50px;">) =
-          <input type="text" style="width: 50px;"> -
-          <input type="text" style="width: 50px;"> =
-          <input type="text" style="width: 50px;">
+          <input type="text" name="d23" style="width: 50px;"> -
+          <input type="text" name="d24" style="width: 50px;">(
+          <input type="text" name="d25" style="width: 50px;">)(
+          <input type="text" name="d26" style="width: 50px;">) =
+          <input type="text" name="d27" style="width: 50px;"> -
+          <input type="text" name="d28" style="width: 50px;"> =
+          <input type="text" name="d29" style="width: 50px;">
         </p>
-        <p>- Jadi, nilai diskriminan adalah <input type="text" style="width: 50px;"></p>
+        <p>- Jadi, nilai diskriminan adalah <input type="text" name="d30" style="width: 50px;"></p>
       </li>
     </ol>
   </div>
@@ -612,11 +615,11 @@
                   </thead>
                   <tbody>
                     <tr><td><b>x</b></td><td><b>Y</b></td></tr>
-                    <tr><td>-2</td><td><input type="number" class="form-control"></td></tr>
-                    <tr><td>-1</td><td><input type="number" class="form-control"></td></tr>
-                    <tr><td>0</td><td><input type="number" class="form-control"></td></tr>
-                    <tr><td>1</td><td><input type="number" class="form-control"></td></tr>
-                    <tr><td>2</td><td><input type="number" class="form-control"></td></tr>
+                    <tr><td>-2</td><td><input type="number" name="d31" class="form-control"></td></tr>
+                    <tr><td>-1</td><td><input type="number" name="d32" class="form-control"></td></tr>
+                    <tr><td>0</td><td><input type="number" name="d33" class="form-control"></td></tr>
+                    <tr><td>1</td><td><input type="number" name="d34" class="form-control"></td></tr>
+                    <tr><td>2</td><td><input type="number" name="d35" class="form-control"></td></tr>
                   </tbody>
                 </table>
               </div>
@@ -635,11 +638,11 @@
         <li>
           Plot setiap titik dari tabel ke sistem koordinat dan hubungkan grafiknya.
           Koordinat titik yang didapatkan dari tabel adalah
-          <input type="text" class="form-control d-inline-block" style="width: 50px;" placeholder="x1">,
-          <input type="text" class="form-control d-inline-block" style="width: 50px;" placeholder="x2">,
-          <input type="text" class="form-control d-inline-block" style="width: 50px;" placeholder="x3">,
-          <input type="text" class="form-control d-inline-block" style="width: 50px;" placeholder="x4">,
-          <input type="text" class="form-control d-inline-block" style="width: 50px;" placeholder="x5">.
+          <input type="text" name="d36" class="form-control d-inline-block" style="width: 50px;" placeholder="x1">,
+          <input type="text" name="d37" class="form-control d-inline-block" style="width: 50px;" placeholder="x2">,
+          <input type="text" name="d38" class="form-control d-inline-block" style="width: 50px;" placeholder="x3">,
+          <input type="text" name="d39" class="form-control d-inline-block" style="width: 50px;" placeholder="x4">,
+          <input type="text" name="d40" class="form-control d-inline-block" style="width: 50px;" placeholder="x5">.
         </li>
       </ol>
     </li>
@@ -760,7 +763,136 @@ document.addEventListener("DOMContentLoaded", function() {
     "x": "0",
     "y": "c",
     "up_direction": "atas",
-    "down_direction": "bawah"
+    "down_direction": "bawah",
+
+    "c_1": "(0,5)",
+    "c_2": "(0,8)",
+    "c_3": "(0,-3)",
+    "c_4": "(0,-6)",
+    "c_5": "(0,-9)",
+
+    "contoh":"-2",
+    "latihan_1_c": "0",
+    "latihan_1_y": "0",
+    "latihan_2_c": "0",
+    "latihan_2_y": "3",
+    "latihan_3_c": "0",
+    "latihan_3_y": "3",
+
+    "fungsi_1_1": "2",
+    "fungsi_1_2": "-1",
+    "fungsi_1_3": "3",
+    "fungsi_1_4": "atas",
+    "fungsi_1_5": "3",
+
+    "fungsi_2_1": "-2",
+    "fungsi_2_2": "-2",
+    "fungsi_2_3": "6",
+    "fungsi_2_4": "bawah",
+    "fungsi_2_5": "6",
+
+
+    // 🔹 Peran nilai  b
+    "b1": "1",
+    "b2": "2",
+    "b3": "4",
+    "b4": "1",
+    "b5": "-1",
+    "b6": "1",
+    "b7": "-1",
+    "b8": "atas",
+    "b9": "1",
+    "b10": "-1",
+
+    "b_lat_1": "2",
+    "b_lat_2": "4",
+    "b_lat_3": "4",
+    "b_lat_4": "-4",
+    "b_lat_5": "2(2)",
+    "b_lat_6": "-4",
+    "b_lat_7": "4",
+    "b_lat_8": "-1",
+    'b_lat_9': '2(-1)',
+    'b_lat_10': '4(-1)',
+    'b_lat_11': '4',
+    'b_lat_12': '2',
+    'b_lat_13': '-4',
+    'b_lat_14': '4',
+    'b_lat_15': '2',
+    'b_lat_17': '-1',
+    'b_lat_18': '2',
+    'b_lat_19': '-1',
+    'b_lat_20': '2',
+    'b_lat_21': 'atas',
+    'b_lat_22': '-1',
+    'b_lat_23': '2',
+    'b_lat_24': 'minimum',
+
+    'b_lat_25': '-1',
+    'b_lat_26': '4',
+    'b_lat_27': '-4',
+    'b_lat_28': '-4',
+    'b_lat_29': '2(-1)',
+    'b_lat_30': '-4',
+    'b_lat_31': '-2',
+    'b_lat_32': '2',
+    'b_lat_33': '-2',
+    'b_lat_34': '4(2)',
+    'b_lat_35': '4',
+    'b_lat_36': '-4',
+    'b_lat_37': '8',
+    'b_lat_38': '4',
+    'b_lat_39': '0',
+    'b_lat_40': '2',
+    'b_lat_41': '2',
+    'b_lat_42': '0',
+    'b_lat_43': '-1',
+    'b_lat_44': 'bawah',
+    'b_lat_45': '2', 
+    'b_lat_46': '0',
+    'b_lat_47': 'maksimum',
+
+    // 🔹 Diskriminan
+    "d1": "-1",
+    "d2": "4",
+    "d3": "-1",
+    "d4": "2",
+    "d5": "1",
+    "d6": "8",
+    "d7": "9",
+    "d8": "9",
+    "d9": "3",
+    "d10": "-9",
+    "d11": "-12",
+    "d12": "-9",
+    "d13": "4",
+    "d14": "3",
+    "d15": "-12",
+    "d16": "81",
+    "d17": "144",
+    "d18": "225",
+    "d19": "225",
+    "d20": "2",
+    "d21": "-1",
+    "d22": "3",
+    "d23": "-1",
+    "d24": "4",
+    "d25": "2",
+    "d26": "3",
+    "d27": "1",
+    "d28": "24",
+    "d29": "-23",
+    "d30": "-23",
+    "d31": "2",
+    "d32": "6",
+    "d33": "6",
+    "d34": "2",
+    "d35": "-6",
+    "d36": "-2,2",
+    "d37": "-1,6",
+    "d38": "0,6",
+    "d39": "1,2",
+    "d40": "2,-6",
   };
 
   // 🌱 Tambahkan event listener untuk semua input yang ada di kunci jawaban
