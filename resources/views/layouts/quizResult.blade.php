@@ -49,11 +49,13 @@
                 </ul>
                 <div class="mb-5">
                     <a href="{{ route('quiz.show', ['quizKey' => $quizKey]) }}" class="btn btn-primary mt-3">Ulangi Quiz</a>
+                    @if($score > 8)
                     <a href="{{ isset($menus[array_search($quizKey, array_column($menus, 'key')) + 1]['route']) ? route($menus[array_search($quizKey, array_column($menus, 'key')) + 1]['route']) : '#' }}" 
                         class="btn btn-primary mt-3 
                         {{ $progress->progress < array_search($quizKey, array_column($menus, 'key')) + 1 || $quizKey === 'evaluasi' ? 'disabled' : '' }}">
                         Lanjutkan
                     </a>
+                    @endif
                 </div>
             </div>
             </div>
